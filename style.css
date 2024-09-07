@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+} 
+.calculator {
+    display: flex;
+    width: 70vw;
+    height: 75vh;
+    background-color: gray;
+    flex-direction: column;
+    border-radius: 24px;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+label {
+    background-color: white;
+    width: 90%;
+    height: 75%;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 75%;
+}
+
+.numbers {
+    display: flex;
+    width: 66%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.num {
+    height: 33.3%;
+    width: 25%;
+    font-size: clamp(1rem, 3.5vw, 4rem);
+}
+.operations {
+    display: flex;
+    width: 34%;
+    height: 100%;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.operate {
+    width: 100%;
+    height: 13%;
+    font-size: clamp(1rem, 3.5vw, 4rem);
+}
+
+button {
+    border-radius: 34px;
+    border-color: black;
+    border-width: 4px;
+    text-align: center;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+}
+button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+  }
+
+  button:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+  }
+  label {
+    font-size: 30px;
+  }
+  button:hover {
+    background-color: #555555;
+    color: white;
+  }
+footer {
+    margin-top: 10px;
+}
